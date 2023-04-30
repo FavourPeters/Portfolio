@@ -7,6 +7,9 @@
 .lheight {
     line-height: 130.5%;
 }
+.lgheight {
+    line-height: 7rem;
+}
 
 .stext {
     font-weight: 400;
@@ -19,7 +22,6 @@
     position: fixed;
     right: 0;
     top: 0;
-    background: white;
     height: 100vh;
     width: 50%;
     z-index: 999;
@@ -27,8 +29,16 @@
     transform: translateX(100%);
     transition: transform .5s ease-in-out;
 }
-.show {
+/* .show {
+    transform: translateX(0);
     position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+} */
+.out {
+    width: 25%;
 }
 
 .list {

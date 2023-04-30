@@ -17,7 +17,18 @@ module.exports = {
       sm: '480px',
       md: '768px',
       lg: '976px',
+      lgs: '1150px',
       xl: '1440px'
+    },
+    width: {
+      'out': '27%',
+      '72': '18rem',
+      '80': '20rem',
+      '81': '25rem',
+      '82': '30rem',
+      'himg': '27rem',
+      'himgg': '30rem',
+      'himggg': '33rem'
     },
     extend: {},
   },
