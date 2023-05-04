@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,27 +12,29 @@
     <script src="https://kit.fontawesome.com/3f6f0f9b6b.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-bgPurple">
-    <div class="pre-loader"></div>
+    <!-- <div class="h-screen w-full">
+        <div class="loader" id="load"></div>
+    </div> -->
 
-    <header class="mx-4 mt-3 flex justify-between md:mx-8 md:mt-7">
+    <header class="mx-4 mt-3 flex justify-between md:mx-8 md:mt-7" id="home">
         <a href="#" class="font-bold md:text-2xl">Favour<span class="text-secondary">Peters</span></a>
 
         <nav class="bg-white translate-x-full hide md:translate-x-0 md:absolute md:w-auto md:h-auto md:bg-opacity-0 md:mt-5 md:mr-52 md:capitalize">
-            <svg xmlns="http://www.w3.org/2000/svg" class="close md:hidden" id="close" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="close cursor-pointer md:hidden" id="close" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
 
             <ul class="list md:flex md:m-0">
                 <li><a href="#" class="link md:text-secondary md:hover:text-h-color">Home</a></li>
-                <li><a href="#" class="link md:text-secondary md:hover:text-h-color">My Work</a></li>
-                <li><a href="#" class="link md:text-secondary md:hover:text-h-color">About</a></li>
+                <li><a href="#my-work" class="link md:text-secondary md:hover:text-h-color">My Work</a></li>
+                <li><a href="#about" class="link md:text-secondary md:hover:text-h-color">About</a></li>
             </ul>
                 
         </nav>
 
-        <div class="hidden md:block md:w-fit md:px-4 py-1 md:border-solid md:border-2 md:border-secondary md:rounded-full md:ml-1 md:font-bold md:text-black md:bg-secondary">
+        <a href="#hire-me" class="hidden md:block md:w-fit md:px-4 py-1 md:border-solid md:border-2 md:border-secondary md:rounded-full md:ml-1 md:font-bold md:text-black md:bg-secondary" >
             <p class="text-sm">Hire Me</p>
-        </div>
+        </a>
 
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:hidden" id="navi">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer md:hidden" id="navi">
             <path d="M0.78125 9.375H21.0938C21.301 9.375 21.4997 9.29269 21.6462 9.14618C21.7927 8.99966 21.875 8.80095 21.875 8.59375V7.03125C21.875 6.82405 21.7927 6.62534 21.6462 6.47882C21.4997 6.33231 21.301 6.25 21.0938 6.25H0.78125C0.57405 6.25 0.375336 6.33231 0.228823 6.47882C0.08231 6.62534 0 6.82405 0 7.03125L0 8.59375C0 8.80095 0.08231 8.99966 0.228823 9.14618C0.375336 9.29269 0.57405 9.375 0.78125 9.375ZM21.0938 18.75H0.78125C0.57405 18.75 0.375336 18.8323 0.228823 18.9788C0.08231 19.1253 0 19.324 0 19.5312L0 21.0938C0 21.301 0.08231 21.4997 0.228823 21.6462C0.375336 21.7927 0.57405 21.875 0.78125 21.875H21.0938C21.301 21.875 21.4997 21.7927 21.6462 21.6462C21.7927 21.4997 21.875 21.301 21.875 21.0938V19.5312C21.875 19.324 21.7927 19.1253 21.6462 18.9788C21.4997 18.8323 21.301 18.75 21.0938 18.75ZM21.2485 1.90604e-07H8.43896C8.35668 -6.40206e-05 8.27519 0.0160961 8.19915 0.0475561C8.12312 0.0790162 8.05403 0.125159 7.99584 0.183344C7.93766 0.24153 7.89152 0.310616 7.86006 0.386651C7.8286 0.462687 7.81244 0.544179 7.8125 0.626465V2.49854C7.81244 2.58082 7.8286 2.66231 7.86006 2.73835C7.89152 2.81438 7.93766 2.88347 7.99584 2.94166C8.05403 2.99984 8.12312 3.04598 8.19915 3.07744C8.27519 3.1089 8.35668 3.12506 8.43896 3.125H21.2485C21.3308 3.12506 21.4123 3.1089 21.4883 3.07744C21.5644 3.04598 21.6335 2.99984 21.6917 2.94166C21.7498 2.88347 21.796 2.81438 21.8274 2.73835C21.8589 2.66231 21.8751 2.58082 21.875 2.49854V0.626465C21.8751 0.544179 21.8589 0.462687 21.8274 0.386651C21.796 0.310616 21.7498 0.24153 21.6917 0.183344C21.6335 0.125159 21.5644 0.0790162 21.4883 0.0475561C21.4123 0.0160961 21.3308 -6.40206e-05 21.2485 1.90604e-07ZM21.2485 12.5H8.43896C8.35668 12.4999 8.27519 12.5161 8.19915 12.5476C8.12312 12.579 8.05403 12.6252 7.99584 12.6833C7.93766 12.7415 7.89152 12.8106 7.86006 12.8867C7.8286 12.9627 7.81244 13.0442 7.8125 13.1265V14.9985C7.81244 15.0808 7.8286 15.1623 7.86006 15.2383C7.89152 15.3144 7.93766 15.3835 7.99584 15.4417C8.05403 15.4998 8.12312 15.546 8.19915 15.5774C8.27519 15.6089 8.35668 15.6251 8.43896 15.625H21.2485C21.3308 15.6251 21.4123 15.6089 21.4883 15.5774C21.5644 15.546 21.6335 15.4998 21.6917 15.4417C21.7498 15.3835 21.796 15.3144 21.8274 15.2383C21.8589 15.1623 21.8751 15.0808 21.875 14.9985V13.1265C21.8751 13.0442 21.8589 12.9627 21.8274 12.8867C21.796 12.8106 21.7498 12.7415 21.6917 12.6833C21.6335 12.6252 21.5644 12.579 21.4883 12.5476C21.4123 12.5161 21.3308 12.4999 21.2485 12.5Z" fill="white"/>
         </svg>
     </header>
@@ -82,7 +84,7 @@
             </ul>
         </section>
 
-        <section class="about mt-10 text-white bg-lightPurple w-full">
+        <section class="about mt-10 text-white bg-lightPurple w-full" id="about">
             <p class="mx-4 pt-3 text-white font-bold text-center text-2xl hover:underline">About</p>
 
             <p class="text-sm mx-4 py-8 pb-12">As a Frontend developer and graphics designer with a passion for personal development, I am constantly striving to make a positive impact not only on myself but also on the world around me. With a Bachelor of Science in Computer Science from the University of Port Harcourt, I bring a strong foundation in technical knowledge to my work as a designer.
@@ -92,7 +94,7 @@
             </p>
         </section>
 
-        <section class="hire mx-4">
+        <section class="hire mx-4" id="hire-me">
             <p class="mx-4 my-6 text-secondary font-bold text-center text-2xl hover:underline">Hire Me</p>
 
             <div class="location flex space-x-4">
@@ -119,10 +121,10 @@
 
             <div class="social-media flex justify-center space-x-4 mt-2">
                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-solid fa-earth-americas"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/favourpeters110" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://master--favourpeters.netlify.app/src/index.html" target="_blank"><i class="fa-solid fa-earth-americas"></i></a>
+                <a href="https://www.linkedin.com/in/favour-l-peters-73b1b922b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmhINBL7HQPq%2Bz1SCJIJj0w%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/FavourPeters" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
 
             <div class="flex justify-center mt-6 space-x-1">
