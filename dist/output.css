@@ -711,6 +711,10 @@ video {
   text-align: center;
 }
 
+.font-poppins {
+  font-family: poppins, sans-serif;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -874,14 +878,21 @@ video {
   list-style-type: disc;
 }
 
-.hover\:bg-lightPurple:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(151 71 255 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-secondary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 255 245 / var(--tw-bg-opacity));
+}
+
+.hover\:font-poppins:hover {
+  font-family: poppins, sans-serif;
+}
+
+.hover\:font-bold:hover {
+  font-weight: 700;
+}
+
+.hover\:font-semibold:hover {
+  font-weight: 600;
 }
 
 .hover\:text-black:hover {
@@ -1022,6 +1033,24 @@ video {
   .md\:text-secondary {
     --tw-text-opacity: 1;
     color: rgb(0 255 245 / var(--tw-text-opacity));
+  }
+
+  .md\:hover\:bg-lightPurple:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(151 71 255 / var(--tw-bg-opacity));
+  }
+
+  .md\:hover\:bg-trans:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 255 / var(--tw-bg-opacity));
+  }
+
+  .md\:hover\:bg-opacity-0:hover {
+    --tw-bg-opacity: 0;
+  }
+
+  .md\:hover\:font-bold:hover {
+    font-weight: 700;
   }
 
   .md\:hover\:text-h-color:hover {
