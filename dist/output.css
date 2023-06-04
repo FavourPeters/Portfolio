@@ -581,10 +581,6 @@ video {
   margin-top: 1.75rem;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 .flex {
   display: flex;
 }
@@ -876,6 +872,11 @@ video {
 
 .hover\:list-disc:hover {
   list-style-type: disc;
+}
+
+.hover\:bg-lightPurple:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(151 71 255 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-secondary:hover {
