@@ -12,7 +12,7 @@ module.exports = {
       'h-color': '#4B51D2',
       'lightPurple': '#9747FF',
       'black': '#000000',
-      'trans': '#0000FF'
+      'trans': '#C69AFF'
     },
     screens: {
       sm: '480px',
