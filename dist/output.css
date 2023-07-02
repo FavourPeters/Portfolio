@@ -1137,6 +1137,12 @@ video {
     justify-content: space-between;
   }
 
+  .lg\:space-x-32 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(8rem * var(--tw-space-x-reverse));
+    margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .lg\:text-start {
     text-align: start;
   }
